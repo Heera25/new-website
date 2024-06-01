@@ -1,0 +1,262 @@
+body {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+h1, h2 {
+    font-weight: 700;
+}
+
+p {
+    font-size: 1rem;
+}
+
+.btn {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.container{
+    justify-content: center;
+    text-align: center;
+}
+
+.custom-btn {
+    background-color: white; /* Same color as .btn-danger */
+    border-color: #dc3545;
+    color: #dc3545;
+}
+
+.custom-btn:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
+}
+
+.custom-btn1 {
+    background-color: #dc3545; /* Same color as .btn-danger */
+    border-color: #dc3545;
+    color: white;
+}
+
+.custom-btn1:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
+}
+
+.reduced-img {
+    max-width: 80%; /* Reduce image size */
+}
+
+.whatdo {
+    color: #dc3545;
+    margin-left: 0%;
+}
+
+.hover-image-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.hover-image-container img {
+    width: 300px;
+    height: 400px; /* Increased height */
+    object-fit: cover;
+}
+
+.hover-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 400px;
+    background-color: #dc3545;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+    padding: 20px;
+    text-align: center;
+}
+
+.hover-image-container:hover .hover-content {
+    opacity: 1;
+}
+
+.slider-container {
+    overflow: hidden;
+    position: relative;
+    margin: 0 -10px; /* Negative margin to account for the added space */
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    margin-left: -10px; /* Adjust for added space */
+}
+
+.slider-item {
+    min-width: calc(33.33% - 20px); /* Adjusted width to account for space between items */
+    box-sizing: border-box;
+    margin: 0 10px; /* Added space between items */
+}
+
+.slider-nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.dot {
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+    background-color: #dc3545;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #c82333;
+}
+
+#best {
+    color: #dc3545;
+    justify-content: center;
+    position: relative;  
+}
+.best {
+    text-align: center;
+    justify-content: center;
+}
+
+.our-project {
+    margin: 50px 0;
+    text-align: center;
+    justify-content: center;
+    padding: 0 20px; /* Add padding for the overall section */
+}
+
+.project-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px; /* Add gap between the image and text content */
+}
+
+.image-container {
+    flex: 0.65;
+    padding-right: 40px; /* Space between image and content */
+}
+
+.text-content {
+    flex: 0.5; /* Reduce the width of the content */
+    padding-left: 20px; /* Space between content and right side */
+}
+
+.project-item {
+    cursor: pointer;
+    padding: 20px;
+    transition: background-color 0.3s, color 0.3s;
+    background-color: #f2f2f2; /* Default grey background */
+}
+
+.project-item:hover {
+    background-color: #ff4b5c; /* Red background on hover */
+    color: white; /* White text on hover */
+}
+
+.project-item h4 {
+    font-weight: bold;
+}
+
+.project-item p {
+    margin-top: 10px;
+}
+
+.company-growth {
+    margin: 50px 0;
+    text-align: center;
+}
+
+.growth-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.growth-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.growth-icon {
+    font-size: 2rem;
+    color: #dc3545;
+    margin-bottom: 10px;
+}
+
+.growth-card h3 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.growth-card p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.clients-feedback {
+    margin: 50px 0;
+    text-align: center;
+}
+
+.clients-feedback h6 {
+    color: #dc3545;
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.clients-feedback h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.clients-feedback p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.clients-feedback i {
+    color: #dc3545;
+    margin-right: 10px;
+}
+
+.clients-feedback strong {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.partners {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+}
+
+.partners img {
+    width: 100%;
+    max-width: none;
+}
+
+.image{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    border-radius: 20%;
+}
