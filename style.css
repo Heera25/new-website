@@ -60,6 +60,9 @@ p {
     width: 300px;
     height: 400px; /* Increased height */
     object-fit: cover;
+    display: flex;
+    
+    
 }
 
 .hover-content {
